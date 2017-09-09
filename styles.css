@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+	  font-family: Helvetica, Arial, sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 60px 60px 28px;
+    width: 640px;
+    background: #d1d1d1;
+}
+
+.banner {
+    width: 640px;
+    height: 150px;
+    display: block;
+}
+
+.wrap {
+    background: #fff;
+    padding: 57px 50px 30px;
+}
+
+/*introduction*/
+
+h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+	  margin: 30px 0;
+      font-size: 16px;
+}
+
+.one {
+    margin: 17px 0;
+}
+
+/*servises*/
+
+.services {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.services > div {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    width: 255px;
+    position: relative;
+}
+
+.upper_block {
+	  width: 255px;
+      height: 213px;
+}
+
+.services p{
+    margin: 17px 0;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 540px;
+    height: 41px;
+    background-color: #cf5b4e;
+    text-align: center;
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.services div button:nth-child(-n + 2) { /* почему не отображается? -n+2 - первые 2-е кнопки в div-е с классом services */
+    margin-top: 40px;
+}
+
+.services button {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.lower_block {
+    width: 160px;
+    height: 210px;
+}
+
+.services div:first-child,
+.services div:nth-child(3n),
+.services div:nth-child(3n + 1) {
+	  margin-right: auto;
+}
+
+.services div:nth-child(n + 3) {
+	  width: 30%;
+}
+
+/*communications*/
+
+.communications p {
+	  margin: 17px 0;
+      font-size: 16px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.communications button {
+	  margin: 40px auto 0px;
+}
+
+footer {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
